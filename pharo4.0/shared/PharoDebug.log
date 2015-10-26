@@ -1,0 +1,2169 @@
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: MessageTally>>withDeepCollect:
+20 October 2015 5:12:29.969833 pm
+
+VM: unix - i686 - linux-gnu - NBCoInterpreter NativeBoost-CogPlugin-GuillermoPolito.19 uuid: acc98e51-2fba-4841-a965-2975997bba66 May 15 2014
+NBCogit NativeBoost-CogPlugin-GuillermoPolito.19 uuid: acc98e51-2fba-4841-a965-2975997bba66 May 15 2014
+https://github.com/pharo-project/pharo-vm.git Commit: ed4a4f59208968a21d82fd2406f75c2c4de558b2 Date: 2014-05-15 18:23:04 +0200 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14826
+
+Image: Pharo4.0 [Latest update: #40623]
+
+MessageTally(Object)>>doesNotUnderstand: #withDeepCollect:
+	Receiver: UndefinedObject(ProtoObject) >> ~~
+	Arguments and temporary variables: 
+		aMessage: 	withDeepCollect: #children
+		exception: 	MessageNotUnderstood: MessageTally>>withDeepCollect:
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		class: 	UndefinedObject
+		method: 	ProtoObject>>#'~~'
+		process: 	a Process in [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFal...etc...
+		tally: 	66
+		receivers: 	#()
+		senders: 	nil
+		time: 	0
+		gcStats: 	nil
+		maxClassNameSize: 	50
+		maxClassPlusSelectorSize: 	100
+		maxTabs: 	120
+		reportOtherProcesses: 	true
+
+
+MessageTally>>gtInspectorMessageTreeIn:
+	Receiver: UndefinedObject(ProtoObject) >> ~~
+	Arguments and temporary variables: 
+		composite: 	a GLMCompositePresentation(id=243531776 title=nil pane=a GLMPane(144...etc...
+		methods: 	nil
+		normalizer: 	nil
+	Receiver's instance variables: 
+		class: 	UndefinedObject
+		method: 	ProtoObject>>#'~~'
+		process: 	a Process in [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFal...etc...
+		tally: 	66
+		receivers: 	#()
+		senders: 	nil
+		time: 	0
+		gcStats: 	nil
+		maxClassNameSize: 	50
+		maxClassPlusSelectorSize: 	100
+		maxTabs: 	120
+		reportOtherProcesses: 	true
+
+
+[ :eachPragma | 
+(eachPragma selector findTokens: $:) size = 1
+	ifTrue: [ self perform: eachPragma selector with: composite ].
+(eachPragma selector findTokens: $:) size = 2
+	ifTrue: [ self perform: eachPragma selector with: composite with: aGTInspector ] ] in MessageTally(Object)>>gtInspectorPresentationsIn:inContext:
+	Receiver: UndefinedObject(ProtoObject) >> ~~
+	Arguments and temporary variables: 
+		composite: 	a GLMCompositePresentation(id=243531776 title=nil pane=a GLMPane(144...etc...
+		aGTInspector: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLM...etc...
+		pragmas: 	an Array(<gtInspectorPresentationOrder: 10> <gtInspectorPresentationOr...etc...
+		eachPragma: 	<gtInspectorPresentationOrder: 40>
+	Receiver's instance variables: 
+		class: 	UndefinedObject
+		method: 	ProtoObject>>#'~~'
+		process: 	a Process in [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFal...etc...
+		tally: 	66
+		receivers: 	#()
+		senders: 	nil
+		time: 	0
+		gcStats: 	nil
+		maxClassNameSize: 	50
+		maxClassPlusSelectorSize: 	100
+		maxTabs: 	120
+		reportOtherProcesses: 	true
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(<gtInspectorPresentationOrder: 10> <gtInspectorPresentationOrder: 40> <gtInspecto...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :eachPragma | 
+(eachPragma selector findTokens: $:) size = 1
+	ifTrue:...etc...
+		index: 	2
+	Receiver's instance variables: 
+an Array(<gtInspectorPresentationOrder: 10> <gtInspectorPresentationOrder: 40> <gtInspecto...etc...
+
+MessageTally(Object)>>gtInspectorPresentationsIn:inContext:
+	Receiver: UndefinedObject(ProtoObject) >> ~~
+	Arguments and temporary variables: 
+		composite: 	a GLMCompositePresentation(id=243531776 title=nil pane=a GLMPane(144...etc...
+		aGTInspector: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLM...etc...
+		pragmas: 	an Array(<gtInspectorPresentationOrder: 10> <gtInspectorPresentationOr...etc...
+	Receiver's instance variables: 
+		class: 	UndefinedObject
+		method: 	ProtoObject>>#'~~'
+		process: 	a Process in [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFal...etc...
+		tally: 	66
+		receivers: 	#()
+		senders: 	nil
+		time: 	0
+		gcStats: 	nil
+		maxClassNameSize: 	50
+		maxClassPlusSelectorSize: 	100
+		maxTabs: 	120
+		reportOtherProcesses: 	true
+
+
+[ :d | each gtInspectorPresentationsIn: d inContext: pager ] in [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] in [ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: each ].
+a dynamicActions: [ :aPresentation | each gtInspectorActions asOrderedCollection ].
+a dynamic
+	display: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] ] in RTExampleBrowser>>open
+	Receiver: a RTExampleBrowser
+	Arguments and temporary variables: 
+		pager: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(67...etc...
+		a: 	a GLMCompositePresentation(id=806092800 title=a MessageTally (UndefinedObjec...etc...
+		each: 	UndefinedObject(ProtoObject) >> ~~
+		x: 	UndefinedObject(ProtoObject) >> ~~
+		d: 	a GLMCompositePresentation(id=375390208 title=nil pane=a GLMPane(1024458752 ...etc...
+	Receiver's instance variables: 
+a RTExampleBrowser
+
+GLMCompositePresentation(GLMPresentation)>>with:
+	Receiver: a GLMCompositePresentation(id=375390208 title=nil pane=a GLMPane(1024458752 root))
+	Arguments and temporary variables: 
+		aBlock: 	[ :d | each gtInspectorPresentationsIn: d inContext: pager ]
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(1024458752 root)
+		title: 	nil
+		titleIcon: 	nil
+		transformation: 	nil
+		actions: 	nil
+		condition: 	nil
+		implicitNotNil: 	nil
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	nil
+		acceptsSelection: 	nil
+		parentPrototype: 	nil
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	nil
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		presentations: 	an OrderedCollection(a GTObjectVariablesBrowser(id=788004864 tit...etc...
+		arrangement: 	nil
+
+
+[ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] in [ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: each ].
+a dynamicActions: [ :aPresentation | each gtInspectorActions asOrderedCollection ].
+a dynamic
+	display: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] ] in RTExampleBrowser>>open
+	Receiver: a RTExampleBrowser
+	Arguments and temporary variables: 
+		pager: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(67...etc...
+		a: 	a GLMCompositePresentation(id=806092800 title=a MessageTally (UndefinedObjec...etc...
+		each: 	UndefinedObject(ProtoObject) >> ~~
+		x: 	UndefinedObject(ProtoObject) >> ~~
+	Receiver's instance variables: 
+a RTExampleBrowser
+
+BlockClosure>>glamourValueWithArgs:
+	Receiver: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inCon...etc...
+	Arguments and temporary variables: 
+		anArray: 	an Array(UndefinedObject(ProtoObject) >> ~~)
+	Receiver's instance variables: 
+		outerContext: 	[ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: eac...etc...
+		startpc: 	167
+		numArgs: 	1
+
+
+BlockClosure(Object)>>glamourValue:
+	Receiver: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inCon...etc...
+	Arguments and temporary variables: 
+		anObject: 	UndefinedObject(ProtoObject) >> ~~
+		args: 	an Array(UndefinedObject(ProtoObject) >> ~~)
+	Receiver's instance variables: 
+		outerContext: 	[ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: eac...etc...
+		startpc: 	167
+		numArgs: 	1
+
+
+GLMDynamicPresentation(GLMPresentation)>>displayValue
+	Receiver: a GLMDynamicPresentation(id=467664896 title=nil pane=a GLMPane(578289664 4))
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(578289664 4)
+		title: 	nil
+		titleIcon: 	nil
+		transformation: 	[ :x | (GLMCompositePresentation new with: [ :d | each gtInspec...etc...
+		actions: 	nil
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	a GLMDynamicPresentation(id=934805504 title=nil pane=a GLMPane...etc...
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	a Set(GLMTransmission (origins=an OrderedCollection(...etc...
+		statusPane: 	nil
+		sourceLink: 	GLMCompositePresentation>>dynamic
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		presentationTransformation: 	[ :aComposite :each | aComposite custom: each ]
+		cachedPresentation: 	nil
+
+
+GLMDynamicPresentation>>currentPresentation
+	Receiver: a GLMDynamicPresentation(id=467664896 title=nil pane=a GLMPane(578289664 4))
+	Arguments and temporary variables: 
+		composite: 	a GLMCompositePresentation(id=251133952 title=nil pane=a GLMPane(131...etc...
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(578289664 4)
+		title: 	nil
+		titleIcon: 	nil
+		transformation: 	[ :x | (GLMCompositePresentation new with: [ :d | each gtInspec...etc...
+		actions: 	nil
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	a GLMDynamicPresentation(id=934805504 title=nil pane=a GLMPane...etc...
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	a Set(GLMTransmission (origins=an OrderedCollection(...etc...
+		statusPane: 	nil
+		sourceLink: 	GLMCompositePresentation>>dynamic
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		presentationTransformation: 	[ :aComposite :each | aComposite custom: each ]
+		cachedPresentation: 	nil
+
+
+GLMMorphicDynamicRenderer>>render:
+	Receiver: a GLMMorphicDynamicRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMDynamicPresentation(id=467664896 title=nil pane=a GLMPane(5...etc...
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a PanelMorph(152829952)
+
+
+GLMMorphicDynamicRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+	Receiver: GLMMorphicDynamicRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMDynamicPresentation(id=467664896 title=nil pane=a GLMPane(5...etc...
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		superclass: 	GLMMorphicWidgetRenderer
+		methodDict: 	a MethodDictionary(#actOnPresentationUpdated:->GLMMorphicDynamicRen...etc...
+		format: 	134
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#container)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#GLMMorphicDynamicRenderer
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Glamour-Morphic-Renderer'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+GLMMorphicRenderer>>renderDynamicPresentation:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMDynamicPresentation(id=467664896 title=nil pane=a GLMPane(5...etc...
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMDynamicPresentation>>renderGlamorouslyOn:
+	River: a GLMDynamicPresentation(id=269484032 title=nil pane=a GLMPane(452460544 5))
+	Arguments and temporary variables: 
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(452460544 5)
+		title: 	nil
+		titleIcon: 	nil
+		transformation: 	[ :x | (GLMCompositePresentation new with: [ :d | each gtInspec...etc...
+		actions: 	nil
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	a GLMDynamicPresentation(id=766771200 title=nil pane=a GLMPane...etc...
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	a Set(GLMTransmission (origins=an OrderedCollection(...etc...
+		statusPane: 	nil
+		sourceLink: 	GLMCompositePresentation>>dynamic
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		presentationTransformation: 	[ :aComposite :each | aComposite custom: each ]
+		cachedPresentation: 	nil
+
+
+GLMMorphicRenderer(GLMRenderer)>>render:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aRenderable: 	a GLMDynamicPresentation(id=269484032 title=nil pane=a GLMPane(452...etc...
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+	Receiver: a GLMMorphicTabbedRenderer
+	Arguments and temporary variables: 
+		anObject: 	a GLMDynamicPresentation(id=269484032 title=nil pane=a GLMPane(452460...etc...
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		tabs: 	nil
+
+
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderWithTitleOrNil:
+	Receiver: a GLMMorphicTabbedRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMDynamicPresentation(id=269484032 title=nil pane=a GLMPane(4...etc...
+		morph: 	nil
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		tabs: 	nil
+
+
+GLMMorphicTabbedRenderer>>render:
+	Receiver: a GLMMorphicTabbedRenderer
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		tabs: 	nil
+
+
+GLMMorphicTabbedRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+	Receiver: GLMMorphicTabbedRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMCompositePresentation(id=137101312 title=a MessageTally (Un...etc...
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		superclass: 	GLMMorphicCompositeRenderer
+		methodDict: 	a MethodDictionary(#actOnContextChanged:->GLMMorphicTabbedRenderer>...etc...
+		format: 	134
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#tabs)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#GLMMorphicTabbedRenderer
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Glamour-Morphic-Renderer'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+GLMMorphicRenderer>>renderTabbedCompositePresentation:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aCompositePresentation: 	a GLMCompositePresentation(id=137101312 title=a Message...etc...
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMTabbedArrangement>>renderGlamorouslyOn:
+	Receiver: a GLMTabbedArrangement
+	Arguments and temporary variables: 
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		composite: 	a GLMCompositePresentation(id=137101312 title=a MessageTally (Undefi...etc...
+
+
+GLMCompositePresentation>>renderGlamorouslyOn:
+	Receiver: a GLMCompositePresentation(id=137101312 title=a MessageTally (UndefinedObject(ProtoObject)...etc...
+	Arguments and temporary variables: 
+		aRenderer: 	a GLMMorphicRenderer
+er
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(578289664 4)
+		title: 	[ GTInspector new printObjectAsAnItem: each ]
+		titleIcon: 	nil
+		transformation: 	nil
+		actions: 	nil
+		condition: 	nil
+		implicitNotNil: 	nil
+		dynamicActionsBlock: 	[ :aPresentation | each gtInspectorActions asOrderedCollec...etc...
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	nil
+		acceptsSelection: 	nil
+		parentPrototype: 	a GLMCompositePresentation(id=806092800 title=a MessageTally (...etc...
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	nil
+		rawSelectionTransmissions: 	a Set(GLMTransmission (origins=an OrderedCollection(...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		presentations: 	an OrderedCollection(a GLMDynamicPresentation(id=467664896 title...etc...
+		arrangement: 	a GLMTabbedArrangement
+
+
+GLMMorphicRenderer(GLMRenderer)>>render:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aRenderable: 	a GLMCompositePresentation(id=335282176 title=a MessageTally (Unde...etc...
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMMorphicPaneRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+	Receiver: a GLMMorphicPaneRenderer
+	Arguments and temporary variables: 
+		anObject: 	a GLMCompositePresentation(id=335282176 title=a MessageTally (Undefin...etc...
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a PanelMorph(1018691584)
+		contentMorph: 	nil
+
+
+GLMMorphicPaneRenderer>>renderContainerFor:
+	Receiver: a GLMMorphicPaneRenderer
+	Arguments and temporary variables: 
+		aPane: 	a GLMPane(578289664 4)
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a PanelMorph(1018691584)
+		contentMorph: 	nil
+
+
+GLMMorphicPaneRenderer>>render:
+	Receiver: a GLMMorphicPaneRenderer
+	Arguments and temporary variables: 
+		aPane: 	a GLMPane(578289664 4)
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a PanelMorph(1018691584)
+		contentMorph: 	nil
+
+
+GLMMorphicPaneRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+	Receiver: GLMMorphicPaneRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMPane(578289664 4)
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		superclass: 	GLMMorphicWidgetRenderer
+		methodDict: 	a MethodDictionary(#actOnMatchingPresentationChanged:->GLMMorphicPa...etc...
+		format: 	136
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#container #contentMorph)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#GLMMorphicPaneRenderer
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Glamour-Morphic-Renderer'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+GLMMorphicRenderer>>renderPane:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aPane: 	a GLMPane(578289664 4)
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMPane>>renderGlamorouslyOn:
+	Receiver: a GLMPane(578289664 4)
+	Arguments and temporary variables: 
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		browser: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(...etc...
+		name: 	'4'
+		presentations: 	a GLMCompositePresentation(id=335282176 title=a MessageTally (Un...etc...
+		ports: 	an OrderedCollection(Port (pane='4' name=#activePresentation value=nil) ...etc...
+		lastActivePresentation: 	nil
+		allowedToNotePresentationsChanged: 	true
+		cachedMatchingPresentations: 	an OrderedCollection(a GLMDynamicPresentation(id=4...etc...
+
+
+GLMMorphicRenderer(GLMRenderer)>>render:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aRenderable: 	a GLMPane(578289664 4)
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMMorphicPagerRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+	Receiver: a GLMMorphicPagerRenderer
+	Arguments and temporary variables: 
+		anObject: 	a GLMPane(578289664 4)
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a GLMFoundationBrick(970457088)
+
+
+GLMMorphicPagerRenderer>>actOnPaneAdded:
+	Receiver: a GLMMorphicPagerRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a GLMFoundationBrick(970457088)
+
+
+MessageSend>>value:
+	Receiver: MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+	Arguments and temporary variables: 
+		anObject: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPagerRenderer
+		selector: 	#actOnPaneAdded:
+		arguments: 	#()
+
+
+MessageSend>>cull:
+	Receiver: MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+	Arguments and temporary variables: 
+		arg: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPagerRenderer
+		selector: 	#actOnPaneAdded:
+		arguments: 	#()
+
+
+MessageSend>>cull:cull:
+	Receiver: MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+	Arguments and temporary variables: 
+		arg1: 	a GLMPaneAdded
+		arg2: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(675...etc...
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPagerRenderer
+		selector: 	#actOnPaneAdded:
+		arguments: 	#()
+
+
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		anAnnouncement: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		announcer: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPan...etc...
+		announcementClass: 	GLMPaneAdded
+		subscriber: 	a GLMMorphicPagerRenderer
+		action: 	MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+
+
+BlockClosure>>on:do:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	[ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx...etc...
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+
+--- The full stack ---
+MessageTally(Object)>>doesNotUnderstand: #withDeepCollect:
+MessageTally>>gtInspectorMessageTreeIn:
+[ :eachPragma | 
+(eachPragma selector findTokens: $:) size = 1
+	ifTrue: [ self perform: eachPragma selector with: composite ].
+(eachPragma selector findTokens: $:) size = 2
+	ifTrue: [ self perform: eachPragma selector with: composite with: aGTInspector ] ] in MessageTally(Object)>>gtInspectorPresentationsIn:inContext:
+Array(SequenceableCollection)>>do:
+MessageTally(Object)>>gtInspectorPresentationsIn:inContext:
+[ :d | each gtInspectorPresentationsIn: d inContext: pager ] in [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] in [ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: each ].
+a dynamicActions: [ :aPresentation | each gtInspectorActions asOrderedCollection ].
+a dynamic
+	display: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] ] in RTExampleBrowser>>open
+GLMCompositePresentation(GLMPresentation)>>with:
+[ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] in [ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: each ].
+a dynamicActions: [ :aPresentation | each gtInspectorActions asOrderedCollection ].
+a dynamic
+	display: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] ] in RTExampleBrowser>>open
+BlockClosure>>glamourValueWithArgs:
+BlockClosure(Object)>>glamourValue:
+GLMDynamicPresentation(GLMPresentation)>>displayValue
+GLMDynamicPresentation>>currentPresentation
+GLMMorphicDynamicRenderer>>render:
+GLMMorphicDynamicRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderDynamicPresentation:
+GLMDynamicPresentation>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderWithTitleOrNil:
+GLMMorphicTabbedRenderer>>render:
+GLMMorphicTabbedRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderTabbedCompositePresentation:
+GLMTabbedArrangement>>renderGlamorouslyOn:
+GLMCompositePresentation>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicPaneRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicPaneRenderer>>renderContainerFor:
+GLMMorphicPaneRenderer>>render:
+GLMMorphicPaneRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderPane:
+GLMPane>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicPagerRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicPagerRenderer>>actOnPaneAdded:
+MessageSend>>value:
+MessageSend>>cull:
+MessageSend>>cull:cull:
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[ Processor terminateActive ] in [ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx := thisContext.
+thisCtx := onDoCtx home.	"find the context on stack for which this method's is sender"
+[ onDoCtx sender == thisCtx ]
+	whileFalse: [ 
+		onDoCtx := onDoCtx sender.
+		onDoCtx
+			ifNil: [ 
+				"Can't find our home context. seems like we're already forked
+				and handling another exception in new thread. In this case, just pass it through handler."
+				^ handlerAction cull: ex ] ].
+bottom := [ Processor terminateActive ] asContext.
+onDoCtx privSender: bottom.
+handler := [ handlerAction cull: ex ] asContext.
+handler privSender: thisContext sender.
+(Process forContext: handler priority: Processor activePriority) resume.	"cut the stack of current process"
+thisContext privSender: thisCtx.
+nil ] in BlockClosure>>on:fork:
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: MessageTally>>withDeepCollect:
+20 October 2015 5:13:02.437839 pm
+
+VM: unix - i686 - linux-gnu - NBCoInterpreter NativeBoost-CogPlugin-GuillermoPolito.19 uuid: acc98e51-2fba-4841-a965-2975997bba66 May 15 2014
+NBCogit NativeBoost-CogPlugin-GuillermoPolito.19 uuid: acc98e51-2fba-4841-a965-2975997bba66 May 15 2014
+https://github.com/pharo-project/pharo-vm.git Commit: ed4a4f59208968a21d82fd2406f75c2c4de558b2 Date: 2014-05-15 18:23:04 +0200 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14826
+
+Image: Pharo4.0 [Latest update: #40623]
+
+MessageTally(Object)>>doesNotUnderstand: #withDeepCollect:
+	Receiver: LazyMorphListMorph(LazyMorphListMorph) >> listChanged
+	Arguments and temporary variables: 
+		aMessage: 	withDeepCollect: #children
+		exception: 	MessageNotUnderstood: MessageTally>>withDeepCollect:
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		class: 	LazyMorphListMorph
+		method: 	LazyMorphListMorph>>#listChanged
+		process: 	a Process in [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFal...etc...
+		tally: 	1678
+		receivers: 	an Array(LazyMorphListMorph(LazyListMorph) >> getListSize LazyMorphL...etc...
+		senders: 	nil
+		time: 	0
+		gcStats: 	nil
+		maxClassNameSize: 	50
+		maxClassPlusSelectorSize: 	100
+		maxTabs: 	120
+		reportOtherProcesses: 	true
+
+
+MessageTally>>gtInspectorMessageTreeIn:
+	Receiver: LazyMorphListMorph(LazyMorphListMorph) >> listChanged
+	Arguments and temporary variables: 
+		composite: 	a GLMCompositePresentation(id=337379328 title=nil pane=a GLMPane(101...etc...
+		methods: 	nil
+		normalizer: 	nil
+	Receiver's instance variables: 
+		class: 	LazyMorphListMorph
+		method: 	LazyMorphListMorph>>#listChanged
+		process: 	a Process in [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFal...etc...
+		tally: 	1678
+		receivers: 	an Array(LazyMorphListMorph(LazyListMorph) >> getListSize LazyMorphL...etc...
+		senders: 	nil
+		time: 	0
+		gcStats: 	nil
+		maxClassNameSize: 	50
+		maxClassPlusSelectorSize: 	100
+		maxTabs: 	120
+		reportOtherProcesses: 	true
+
+
+[ :eachPragma | 
+(eachPragma selector findTokens: $:) size = 1
+	ifTrue: [ self perform: eachPragma selector with: composite ].
+(eachPragma selector findTokens: $:) size = 2
+	ifTrue: [ self perform: eachPragma selector with: composite with: aGTInspector ] ] in MessageTally(Object)>>gtInspectorPresentationsIn:inContext:
+	Receiver: LazyMorphListMorph(LazyMorphListMorph) >> listChanged
+	Arguments and temporary variables: 
+		composite: 	a GLMCompositePresentation(id=337379328 title=nil pane=a GLMPane(101...etc...
+		aGTInspector: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLM...etc...
+		pragmas: 	an Array(<gtInspectorPresentationOrder: 10> <gtInspectorPresentationOr...etc...
+		eachPragma: 	<gtInspectorPresentationOrder: 40>
+	Receiver's instance variables: 
+		class: 	LazyMorphListMorph
+		method: 	LazyMorphListMorph>>#listChanged
+		process: 	a Process in [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFal...etc...
+		tally: 	1678
+		receivers: 	an Array(LazyMorphListMorph(LazyListMorph) >> getListSize LazyMorphL...etc...
+		senders: 	nil
+		time: 	0
+		gcStats: 	nil
+		maxClassNameSize: 	50
+		maxClassPlusSelectorSize: 	100
+		maxTabs: 	120
+		reportOtherProcesses: 	true
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(<gtInspectorPresentationOrder: 10> <gtInspectorPresentationOrder: 40> <gtInspecto...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :eachPragma | 
+(eachPragma selector findTokens: $:) size = 1
+	ifTrue:...etc...
+		index: 	2
+	Receiver's instance variables: 
+an Array(<gtInspectorPresentationOrder: 10> <gtInspectorPresentationOrder: 40> <gtInspecto...etc...
+
+MessageTally(Object)>>gtInspectorPresentationsIn:inContext:
+	Receiver: LazyMorphListMorph(LazyMorphListMorph) >> listChanged
+	Arguments and temporary variables: 
+		composite: 	a GLMCompositePresentation(id=337379328 title=nil pane=a GLMPane(101...etc...
+		aGTInspector: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLM...etc...
+		pragmas: 	an Array(<gtInspectorPresentationOrder: 10> <gtInspectorPresentationOr...etc...
+	Receiver's instance variables: 
+		class: 	LazyMorphListMorph
+		method: 	LazyMorphListMorph>>#listChanged
+		process: 	a Process in [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFal...etc...
+		tally: 	1678
+		receivers: 	an Array(LazyMorphListMorph(LazyListMorph) >> getListSize LazyMorphL...etc...
+		senders: 	nil
+		time: 	0
+		gcStats: 	nil
+		maxClassNameSize: 	50
+		maxClassPlusSelectorSize: 	100
+		maxTabs: 	120
+		reportOtherProcesses: 	true
+
+
+[ :d | each gtInspectorPresentationsIn: d inContext: pager ] in [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] in [ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: each ].
+a dynamicActions: [ :aPresentation | each gtInspectorActions asOrderedCollection ].
+a dynamic
+	display: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] ] in RTExampleBrowser>>open
+	Receiver: a RTExampleBrowser
+	Arguments and temporary variables: 
+		pager: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(67...etc...
+		a: 	a GLMCompositePresentation(id=629407744 title=a MessageTally (LazyMorphListM...etc...
+		each: 	LazyMorphListMorph(LazyMorphListMorph) >> listChanged
+		x: 	LazyMorphListMorph(LazyMorphListMorph) >> listChanged
+		d: 	a GLMCompositePresentation(id=337379328 title=nil pane=a GLMPane(1016594432 ...etc...
+	Receiver's instance variables: 
+a RTExampleBrowser
+
+GLMCompositePresentation(GLMPresentation)>>with:
+	Receiver: a GLMCompositePresentation(id=337379328 title=nil pane=a GLMPane(1016594432 root))
+	Arguments and temporary variables: 
+		aBlocationOr...etc...
+	Receiver's instance variables: 
+		class: 	LazyMorphListMorph
+		method: 	LazyMorphListMorph>>#listChanged
+		process: 	a Process in [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFal...etc...
+		tally: 	1678
+		receivers: 	an Array(LazyMorphListMorph(LazyListMorph) >> getListSize LazyMorphL...etc...
+		senders: 	nil
+		time: 	0
+		gcStats: 	nil
+		maxClassNameSize: 	50
+		maxClassPlusSelectorSize: 	100
+		maxTabs: 	120
+		reportOtherProcesses: 	true
+
+
+[ :d | each gtInspectorPresentationsIn: d inContext: pager ] in [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] in [ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: each ].
+a dynamicActions: [ :aPresentation | each gtInspectorActions asOrderedCollection ].
+a dynamic
+	display: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] ] in RTExampleBrowser>>open
+	Receiver: a RTExampleBrowser
+	Arguments and temporary variables: 
+		pager: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(67...etc...
+		a: 	a GLMCompositePresentation(id=689700864 title=a MessageTally (LazyMorphListM...etc...
+		each: 	LazyMorphListMorph(LazyMorphListMorph) >> listChanged
+		x: 	LazyMorphListMorph(LazyMorphListMorph) >> listChanged
+		d: 	a GLMCompositePresentation(id=228851712 title=nil pane=a GLMPane(871890944 r...etc...
+	Receiver's instance variables: 
+a RTExampleBrowser
+
+GLMCompositePresentation(GLMPresentation)>>with:
+	Receiver: a GLMCompositePresentation(id=228851712 title=nil pane=a GLMPane(871890944 root))
+	Arguments and temporary variables: 
+		aBlock: 	[ :d | each gtInspectorPresentationsIn: d inContext: pager ]
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(871890944 root)
+		title: 	nil
+		titleIcon: 	nil
+		transformation: 	nil
+		actions: 	nil
+		condition: 	nil
+		implicitNotNil: 	nil
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	nil
+		acceptsSelection: 	nil
+		parentPrototype: 	nil
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	nil
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		presentations: 	an OrderedCollection(a GTObjectVariablesBrowser(id=647495680 tit...etc...
+		arrangement: 	nil
+
+
+[ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] in [ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: each ].
+a dynamicActions: [ :aPresentation | each gtInspectorActions asOrderedCollection ].
+a dynamic
+	display: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] ] in RTExampleBrowser>>open
+	Receiver: a RTExampleBrowser
+	Arguments and temporary variables: 
+		pager: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(67...etc...
+		a: 	a GLMCompositePresentation(id=689700864 title=a MessageTally (LazyMorphListM...etc...
+		each: 	LazyMorphListMorph(LazyMorphListMorph) >> listChanged
+		x: 	LazyMorphListMorph(LazyMorphListMorph) >> listChanged
+	Receiver's instance variables: 
+a RTExampleBrowser
+
+BlockClosure>>glamourValueWithArgs:
+	Receiver: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inCon...etc...
+	Arguments and temporary variables: 
+		anArray: 	an Array(LazyMorphListMorph(LazyMorphListMorph) >> listChanged)
+	Receiver's instance variables: 
+		outerContext: 	[ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: eac...etc...
+		startpc: 	167
+		numArgs: 	1
+
+
+BlockClosure(Object)>>glamourValue:
+	Receiver: [ :x | (GLMCompositePresennsformation: 	[ :aComposite :each | aComposite custom: each ]
+		cachedPresentation: 	nil
+
+
+GLMDynamicPresentation>>currentPresentation
+	Receiver: a GLMDynamicPresentation(id=339214336 title=nil pane=a GLMPane(486014976 4))
+	Arguments and temporary variables: 
+		composite: 	a GLMCompositePresentation(id=207093760 title=nil pane=a GLMPane(650...etc...
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(486014976 4)
+		title: 	nil
+		titleIcon: 	nil
+		transformation: 	[ :x | (GLMCompositePresentation new with: [ :d | each gtInspec...etc...
+		actions: 	nil
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	a GLMDynamicPresentation(id=782237696 title=nil pane=a GLMPane...etc...
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	a Set(GLMTransmission (origins=an OrderedCollection(...etc...
+		statusPane: 	nil
+		sourceLink: 	GLMCompositePresentation>>dynamic
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		presentationTransformation: 	[ :aComposite :each | aComposite custom: each ]
+		cachedPresentation: 	nil
+
+
+GLMMorphicDynamicRenderer>>render:
+	Receiver: a GLMMorphicDynamicRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMDynamicPresentation(id=339214336 title=nil pane=a GLMPane(4...etc...
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a PanelMorph(102760448)
+
+
+GLMMorphicDynamicRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+	Receiver: GLMMorphicDynamicRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMDynamicPresentation(id=339214336 title=nil pane=a GLMPane(4...etc...
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		superclass: 	GLMMorphicWidgetRenderer
+		methodDict: 	a MethodDictionary(#actOnPresentationUpdated:->GLMMorphicDynamicRen...etc...
+		format: 	134
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#container)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#GLMMorphicDynamicRenderer
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Glamour-Morphic-Renderer'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+GLMMorphicRenderer>>renderDynamicPresentation:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMDynamicPresentation(id=339214336 title=nil pane=a GLMPane(4...etc...
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMDynamicPresentation>>renderGlamorouslyOn:
+	Receiver: a GLMDynamicPresentation(id=339214336 title=nil pane=a GLMPane(486014976 4))
+	Arguments and temporary variables: 
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(486014976 4)
+		title: 	nil
+		titleIcon: 	nil
+		transformation: 	[ :x | (GLMCompositePresentation new with: [ :d | each gtInspec...etc...
+		actions: 	nil
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	a GLMDynamicPresentation(id=782237696 title=nil pane=a GLMPane...etc...
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	a Set(GLMTransmission (origins=an OrderedCollection(...etc...
+		statusPane: 	nil
+		sourceLink: 	GLMCompositePresentation>>dynamic
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		presentationTransformation: 	[ :aComposite :each | aComposite custom: each ]
+		cachedPresentation: 	nil
+
+
+GLMMorphicRenderer(GLMRenderer)>>render:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aRenderable: 	a GLMDynamicPresentation(id=339214336 title=nil pane=a GLMPane(486...etc...
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+	Receiver: a GLMMorphicTabbedRenderer
+	Arguments and temporary variables: 
+		anObject: 	a GLMDynamicPresentation(id=339214336 title=nil pane=a GLMPane(486014...etc...
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		tabs: 	nil
+
+
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderWithTitleOrNil:
+	Receiver: a GLMMorphicTabbedRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMDynamicPresentation(id=339214336 title=nil pane=a GLMPane(4...etc...
+		morph: 	nil
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		tabs: 	nil
+
+
+GLMMorphicTabbedRenderer>>render:
+	Receiver: a GLMMorphicTabbedRenderer
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		tabs: 	nil
+
+
+GLMMorphicTabbedRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+	Receiver: GLMMorphicTabbedRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMCompositePresentation(id=212860928 title=a MessageTally (La...etc...
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		superclass: 	GLMMorphicCompositeRenderer
+		methodDict: 	a MethodDictionary(#actOnContextChanged:->GLMMorphicTabbedRenderer>...etc...
+		format: 	134
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#tabs)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#GLMMorphicTabbedRenderer
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Glamour-Morphic-Renderer'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+GLMMorphicRenderer>>renderTabbedCompositePresentation:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aCompositePresentation: 	a GLMCompositePresentation(id=212860928 title=a Message...etc...
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMTabbedArrangement>>renderGlamorouslyOn:
+	Receiver: a GLMTabbedArrangement
+	Arguments and temporary variables: 
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		composite: 	a GLMCompositePresentation(id=212860928 title=a MessageTally (LazyMo...etc...
+
+
+GLMCompositePresentation>>renderGlamorouslyOn:
+	Receiver: a GLMCompositePresentation(id=212860928 title=a MessageTally (LazyMorphListMorph>>#listCha...etc...
+	Arguments and temporary variables: 
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(486014976 4)
+		title: 	[ GTInspector new printObjectAsAnItem: each ]
+		titleIcon: 	nil
+		transformation: 	nil
+		actions: 	nil
+		condition: 	nil
+		implicitNotNil: 	nil
+		dynamicActionsBlock: 	[ :aPresentation | each gtInspectorActions asOrderedCollec...etc...
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	nil
+		acceptsSelection: 	nil
+		parentPrototype: 	a GLMCompositePresentation(id=629407744 title=a MessageTally (...etc...
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	nil
+		rawSelectionTransmissions: 	a Set(GLMTransmission (origins=an OrderedCollection(...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		presentations: 	an OrderedCollection(a GLMDynamicPresentation(id=339214336 title...etc...
+		arrangement: 	a GLMTabbedArrangement
+
+
+GLMMorphicRenderer(GLMRenderer)>>render:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aRenderable: 	a GLMCompositePresentation(id=212860928 title=a MessageTally (Lazy...etc...
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMMorphicPaneRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+	Receiver: a GLMMorphicPaneRenderer
+	Arguments and temporary variables: 
+		anObject: 	a GLMCompositePresentation(id=212860928 title=a MessageTally (LazyMor...etc...
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a PanelMorph(938475520)
+		contentMorph: 	nil
+
+
+GLMMorphicPaneRenderer>>renderContainerFor:
+	Receiver: a GLMMorphicPaneRenderer
+	Arguments and temporary variables: 
+		aPane: 	a GLMPane(486014976 4)
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a PanelMorph(938475520)
+		contentMorph: 	nil
+
+
+GLMMorphicPaneRenderer>>render:
+	Receiver: a GLMMorphicPaneRenderer
+	Arguments and temporary variables: 
+		aPane: 	a GLMPane(486014976 4)
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a PanelMorph(938475520)
+		contentMorph: 	nil
+
+
+GLMMorphicPaneRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+	Receiver: GLMMorphicPaneRenderer
+	Arguments and temporary variables: 
+		aPresentation: 	a GLMPane(486014976 4)
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		superclass: 	GLMMorphicWidgetRenderer
+		methodDict: 	a MethodDictionary(#actOnMatchingPresentationChanged:->GLMMorphicPa...etc...
+		format: 	136
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#container #contentMorph)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#GLMMorphicPaneRenderer
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Glamour-Morphic-Renderer'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+GLMMorphicRenderer>>renderPane:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aPane: 	a GLMPane(486014976 4)
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMPane>>renderGlamorouslyOn:
+	Receiver: a GLMPane(486014976 4)
+	Arguments and temporary variables: 
+		aRenderer: 	a GLMMorphicRenderer
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		browser: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(...etc...
+		name: 	'4'
+		presentations: 	a GLMCompositePresentation(id=212860928 title=a MessageTally (La...etc...
+		ports: 	an OrderedCollection(Port (pane='4' name=#activePresentation value=nil) ...etc...
+		lastActivePresentation: 	nil
+		allowedToNotePresentationsChanged: 	true
+		cachedMatchingPresentations: 	an OrderedCollection(a GLMDynamicPresentation(id=3...etc...
+
+
+GLMMorphicRenderer(GLMRenderer)>>render:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aRenderable: 	a GLMPane(486014976 4)
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMMorphicPagerRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+	Receiver: a GLMMorphicPagerRenderer
+	Arguments and temporary variables: 
+		anObject: 	a GLMPane(486014976 4)
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a GLMFoundationBrick(970457088)
+
+
+GLMMorphicPagerRenderer>>actOnPaneAdded:
+	Receiver: a GLMMorphicPagerRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a GLMFoundationBrick(970457088)
+
+
+MessageSend>>value:
+	Receiver: MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+	Arguments and temporary variables: 
+		anObject: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPagerRenderer
+		selector: 	#actOnPaneAdded:
+		arguments: 	#()
+
+
+MessageSend>>cull:
+	Recinstance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		browser: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(...etc...
+		name: 	'5'
+		presentations: 	a GLMCompositePresentation(id=164626432 title=a MessageTally (La...etc...
+		ports: 	an OrderedCollection(Port (pane='5' name=#activePresentation value=nil) ...etc...
+		lastActivePresentation: 	nil
+		allowedToNotePresentationsChanged: 	true
+		cachedMatchingPresentations: 	an OrderedCollection(a GLMDynamicPresentation(id=2...etc...
+
+
+GLMMorphicRenderer(GLMRenderer)>>render:
+	Receiver: a GLMMorphicRenderer
+	Arguments and temporary variables: 
+		aRenderable: 	a GLMPane(528220160 5)
+	Receiver's instance variables: 
+		window: 	a GLMSystemWindow(850919424)
+
+
+GLMMorphicPagerRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+	Receiver: a GLMMorphicPagerRenderer
+	Arguments and temporary variables: 
+		anObject: 	a GLMPane(528220160 5)
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a GLMFoundationBrick(970457088)
+
+
+GLMMorphicPagerRenderer>>actOnPaneAdded:
+	Receiver: a GLMMorphicPagerRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		container: 	a GLMFoundationBrick(970457088)
+
+
+MessageSend>>value:
+	Receiver: MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+	Arguments and temporary variables: 
+		anObject: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPagerRenderer
+		selector: 	#actOnPaneAdded:
+		arguments: 	#()
+
+
+MessageSend>>cull:
+	Receiver: MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+	Arguments and temporary variables: 
+		arg: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPagerRenderer
+		selector: 	#actOnPaneAdded:
+		arguments: 	#()
+
+
+MessageSend>>cull:cull:
+	Receiver: MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+	Arguments and temporary variables: 
+		arg1: 	a GLMPaneAdded
+		arg2: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(675...etc...
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPagerRenderer
+		selector: 	#actOnPaneAdded:
+		arguments: 	#()
+
+
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		anAnnouncement: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		announcer: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPan...etc...
+		announcementClass: 	GLMPaneAdded
+		subscriber: 	a GLMMorphicPagerRenderer
+		action: 	MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+
+
+BlockClosure>>on:do:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	[ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx...etc...
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+
+--- The full stack ---
+MessageTally(Object)>>doesNotUnderstand: #withDeepCollect:
+MessageTally>>gtInspectorMessageTreeIn:
+[ :eachPragma | 
+(eachPragma selector findTokens: $:) size = 1
+	ifTrue: [ self perform: eachPragma selector with: composite ].
+(eachPragma selector findTokens: $:) size = 2
+	ifTrue: [ self perform: eachPragma selector with: composite with: aGTInspector ] ] in MessageTally(Object)>>gtInspectorPresentationsIn:inContext:
+Array(SequenceableCollection)>>do:
+MessageTally(Object)>>gtInspectorPresentationsIn:inContext:
+[ :d | each gtInspectorPresentationsIn: d inContext: pager ] in [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] in [ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: each ].
+a dynamicActions: [ :aPresentation | each gtInspectorActions asOrderedCollection ].
+a dynamic
+	display: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsInslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicPagerRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicPagerRenderer>>actOnPaneAdded:
+MessageSend>>value:
+MessageSend>>cull:
+MessageSend>>cull:cull:
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[ Processor terminateActive ] in [ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx := thisContext.
+thisCtx := onDoCtx home.	"find the context on stack for which this method's is sender"
+[ onDoCtx sender == thisCtx ]
+	whileFalse: [ 
+		onDoCtx := onDoCtx sender.
+		onDoCtx
+			ifNil: [ 
+				"Can't find our home context. seems like we're already forked
+				and handling another exception in new thread. In this case, just pass it through handler."
+				^ handlerAction cull: ex ] ].
+bottom := [ Processor terminateActive ] asContext.
+onDoCtx privSender: bottom.
+handler := [ handlerAction cull: ex ] asContext.
+handler privSender: thisContext sender.
+(Process forContext: handler priority: Processor activePriority) resume.	"cut the stack of current process"
+thisContext privSender: thisCtx.
+nil ] in BlockClosure>>on:fork:
+-------------------------------------------------------------------------------
+
+ 	a GLMMorphicRenderer
+		container: 	a GLMFoundationBrick(970457088)
+
+
+MessageSend>>value:
+	Receiver: MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+	Arguments and temporary variables: 
+		anObject: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPagerRenderer
+		selector: 	#actOnPaneAdded:
+		arguments: 	#()
+
+
+MessageSend>>cull:
+	Receiver: MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+	Arguments and temporary variables: 
+		arg: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPagerRenderer
+		selector: 	#actOnPaneAdded:
+		arguments: 	#()
+
+
+MessageSend>>cull:cull:
+	Receiver: MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+	Arguments and temporary variables: 
+		arg1: 	a GLMPaneAdded
+		arg2: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPane(675...etc...
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPagerRenderer
+		selector: 	#actOnPaneAdded:
+		arguments: 	#()
+
+
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		anAnnouncement: 	a GLMPaneAdded
+	Receiver's instance variables: 
+		announcer: 	a GLMPager(id=262406144 title=Roassal examples browser pane=a GLMPan...etc...
+		announcementClass: 	GLMPaneAdded
+		subscriber: 	a GLMMorphicPagerRenderer
+		action: 	MessageSend(#actOnPaneAdded: -> a GLMMorphicPagerRenderer)
+
+
+BlockClosure>>on:do:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	[ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx...etc...
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+
+--- The full stack ---
+MessageTally(Object)>>doesNotUnderstand: #withDeepCollect:
+MessageTally>>gtInspectorMessageTreeIn:
+[ :eachPragma | 
+(eachPragma selector findTokens: $:) size = 1
+	ifTrue: [ self perform: eachPragma selector with: composite ].
+(eachPragma selector findTokens: $:) size = 2
+	ifTrue: [ self perform: eachPragma selector with: composite with: aGTInspector ] ] in MessageTally(Object)>>gtInspectorPresentationsIn:inContext:
+Array(SequenceableCollection)>>do:
+MessageTally(Object)>>gtInspectorPresentationsIn:inContext:
+[ :d | each gtInspectorPresentationsIn: d inContext: pager ] in [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] in [ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: each ].
+a dynamicActions: [ :aPresentation | each gtInspectorActions asOrderedCollection ].
+a dynamic
+	display: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] ] in RTExampleBrowser>>open
+GLMCompositePresentation(GLMPresentation)>>with:
+[ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] in [ :a :each | 
+a title: [ GTInspector new printObjectAsAnItem: each ].
+a dynamicActions: [ :aPresentation | each gtInspectorActions asOrderedCollection ].
+a dynamic
+	display: [ :x | (GLMCompositePresentation new with: [ :d | each gtInspectorPresentationsIn: d inContext: pager ]) startOn: x ] ] in RTExampleBrowser>>open
+BlockClosure>>glamourValueWithArgs:
+BlockClosure(Object)>>glamourValue:
+GLMDynamicPresentation(GLMPresentation)>>displayValue
+GLMDynamicPresentation>>currentPresentation
+GLMMorphicDynamicRenderer>>render:
+GLMMorphicDynamicRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderDynamicPresentation:
+GLMDynamicPresentation>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderWithTitleOrNil:
+GLMMorphicTabbedRenderer>>render:
+GLMMorphicTabbedRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderTabbedCompositePresentation:
+GLMTabbedArrangement>>renderGlamorouslyOn:
+GLMCompositePresentation>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicPaneRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicPaneRenderer>>renderContainerFor:
+GLMMorphicPaneRenderer>>render:
+GLMMorphicPaneRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderPane:
+GLMPane>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicPagerRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicPagerRenderer>>actOnPaneAdded:
+MessageSend>>value:
+MessageSend>>cull:
+MessageSend>>cull:cull:
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[ Processor terminateActive ] in [ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx := thisContext.
+thisCtx := onDoCtx home.	"find the context on stack for which this method's is sender"
+[ onDoCtx sender == thisCtx ]
+	whileFalse: [ 
+		onDoCtx := onDoCtx sender.
+		onDoCtx
+			ifNil: [ 
+				"Can't find our home context. seems like we're already forked
+				and handling another exception in new thread. In this case, just pass it through handler."
+				^ handlerAction cull: ex ] ].
+bottom := [ Processor terminateActive ] asContext.
+onDoCtx privSender: bottom.
+handler := [ handlerAction cull: ex ] asContext.
+handler privSender: thisContext sender.
+(Process forContext: handler priority: Processor activePriority) resume.	"cut the stack of current process"
+thisContext privSender: thisCtx.
+nil ] in BlockClosure>>on:fork:
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: TRConstraint class>>stick:onTheBottomLeftOf:
+22 October 2015 3:36:40.686015 pm
+
+VM: unix - i686 - linux-gnu - NBCoInterpreter NativeBoost-CogPlugin-GuillermoPolito.19 uuid: acc98e51-2fba-4841-a965-2975997bba66 May 15 2014
+NBCogit NativeBoost-CogPlugin-GuillermoPolito.19 uuid: acc98e51-2fba-4841-a965-2975997bba66 May 15 2014
+https://github.com/pharo-project/pharo-vm.git Commit: ed4a4f59208968a21d82fd2406f75c2c4de558b2 Date: 2014-05-15 18:23:04 +0200 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14826
+
+Image: Pharo4.0 [Latest update: #40623]
+
+TRConstraint class(Object)>>doesNotUnderstand: #stick:onTheBottomLeftOf:
+	Receiver: TRConstraint
+	Arguments and temporary variables: 
+		aMessage: 	stick: a TRLabelShape onTheBottomLeftOf: a TRArcShape
+		exception: 	MessageNotUnderstood: TRConstraint class>>stick:onTheBottomLeftOf:
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		superclass: 	TRObject
+		methodDict: 	a MethodDictionary()
+		format: 	2
+		layout: 	a FixedLayout
+		instanceVariables: 	#()
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#TRConstraint
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Trachel-Core'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+RTLabelled>>initializeElement:
+	Receiver: a RTLabelled
+	Arguments and temporary variables: 
+		element: 	a RTElement
+		s: 	a TRArcShape
+		t: 	1
+		callback: 	a TRRemoveCallback
+	Receiver's instance variables: 
+		canvas: 	a TRCanvas
+		color: 	Color gray
+		highlightable: 	false
+		lbl: 	a TRLabelShape
+		lowColor: 	Color veryVeryLightGray
+		offsetOnEdge: 	0.5
+		position: 	#bottomLeft
+		text: 	[ :anElement | aValueOrAOneArgBlock rtValue: anElement model ]
+		fontSize: 	12
+
+
+RTElement(RTAnnounceableObject)>>addInteraction:
+	Receiver: a RTElement
+	Arguments and temporary variables: 
+		anInteractionClassOrInstance: 	a RTLabelled
+	Receiver's instance variables: 
+		announcer: 	an Announcer
+		attributes: 	a Dictionary(#RTLabelledCallback->a TRRemoveCallback #RTLabelledLab...etc...
+		isFixed: 	false
+		model: 	1
+		shape: 	a RTArc
+		trachelShape: 	a TRArcShape
+		view: 	a RTView
+		connectedEdges: 	nil
+		shouldUpdateEdges: 	true
+
+
+RTElement(RTAnnounceableObject)>>@
+	Receiver: a RTElement
+	Arguments and temporary variables: 
+		anInteractionClassOrInstance: 	a RTLabelled
+	Receiver's instance variables: 
+		announcer: 	an Announcer
+		attributes: 	a Dictionary(#RTLabelledCallback->a TRRemoveCallback #RTLabelledLab...etc...
+		isFixed: 	false
+		model: 	1
+		shape: 	a RTArc
+		trachelShape: 	a TRArcShape
+		view: 	a RTView
+		connectedEdges: 	nil
+		shouldUpdateEdges: 	true
+
+
+[ :e | e @ interaction ] in RTGroup>>@
+	Receiver: a RTGroup(a RTElement a RTElement a RTElement a RTElement a RTElement a RTElement a RTElem...etc...
+	Arguments and temporary variables: 
+		interaction: 	a RTLabelled
+		e: 	a RTElement
+	Receiver's instance variables: 
+		array: 	an Array(a RTElement a RTElement a RTElement a RTElement a RTElement a R...etc...
+		firstIndex: 	1
+		lastIndex: 	10
+		attributes: 	nil
+
+
+RTGroup(OrderedCollection)>>do:
+	Receiver: a RTGroup(a RTElement a RTElement a RTElement a RTElement a RTElement a RTElement a RTElem...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :e | e @ interaction ]
+		index: 	1
+	Receiver's instance variables: 
+		array: 	an Array(a RTElement a RTElement a RTElement a RTElement a RTElement a R...etc...
+		firstIndex: 	1
+		lastIndex: 	10
+		attributes: 	nil
+
+
+RTGroup>>@
+	Receiver: a RTGroup(a RTElement a RTElement a RTElement a RTElement a RTElement a RTElement a RTElem...etc...
+	Arguments and temporary variables: 
+		interaction: 	a RTLabelled
+	Receiver's instance variables: 
+		array: 	an Array(a RTElement a RTElement a RTElement a RTElement a RTElement a R...etc...
+		firstIndex: 	1
+		lastIndex: 	10
+		attributes: 	nil
+
+
+RTRoassalExample>>exampleArc
+	Receiver: a RTRoassalExample
+	Arguments and temporary variables: 
+		view: 	a RTView
+		shape: 	a RTArc
+		label: 	a RTLabelled
+	Receiver's instance variables: 
+a RTRoassalExample
+
+RTExampleSelection(GTExample)>>result
+	Receiver: a RTExampleSelection
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		result: 	nil
+		title: 	nil
+		provider: 	a RTRoassalExample
+		selector: 	#exampleArc
+		parentExample: 	nil
+		extractionStrategy: 	nil
+
+
+[ :example | example result ] in RTRoassalExample(RTAbstractExample)>>gtInspectorPreviewIn:
+	Receiver: a RTRoassalExample
+	Arguments and temporary variables: 
+		composite: 	a GLMCompositePresentation(id=258473984 title=nil pane=a GLMPane(478...etc...
+		example: 	a RTExampleSelection
+	Receiver's instance variables: 
+a RTRoassalExample
+
+BlockClosure>>glamourValueWithArgs:
+	Receiver: [ :example | example result ]
+	Arguments and temporary variables: 
+		anArray: 	an Array(a RTExampleSelection)
+	Receiver's instance variables: 
+		outerContext: 	RTRoassalExample(RTAbstractExample)>>gtInspectorPreviewIn:
+		startpc: 	79
+		numArgs: 	1
+
+
+BlockClosure(Object)>>glamourValue:
+	Receiver: [ :example | example result ]
+	Arguments and temporary variables: 
+		anObject: 	a RTExampleSelection
+		args: 	an Array(a RTExampleSelection)
+	Receiver's instance variables: 
+		outerContext: 	RTRoassalExample(RTAbstractExample)>>gtInspectorPreviewIn:
+		startpc: 	79
+		numArgs: 	1
+
+
+GLMTransmission>>value
+	Receiver: GLMTransmission (origins=an OrderedCollection(a GLMPresentationBoundPort 757858304 (name=#...etc...
+	Arguments and temporary variables: 
+		originalValue: 	a RTExampleSelection
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		context: 	nil
+		destination: 	a GLMPresentationBoundPort 794558464 (name=#selection value=a RTVi...etc...
+		browser: 	nil
+		origins: 	an OrderedCollection(a GLMOriginPortReference 793247744 (a GLMPresenta...etc...
+		transmissionStrategy: 	a GLMNoStrategy
+		transformation: 	[ :example | example result ]
+		condition: 	true
+
+
+GLMPanePort>>receive:in:
+	Receiver: Port (pane='2' name=#selection value=a RTView)
+	Arguments and temporary variables: 
+		aTransmission: 	GLMTransmission (origins=an OrderedCollection(a GLMPresentationB...etc...
+		aContext: 	a GLMTransmissionContext(nil)
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		name: 	#selection
+		pane: 	a GLMPane(478937088 2)
+		value: 	a RTView
+
+
+GLMPresentationBoundPort>>receive:in:
+	Receiver: a GLMPresentationBoundPort 794558464 (name=#selection value=a RTView)
+	Arguments and temporary variables: 
+		aTransmission: 	GLMTransmission (origins=an OrderedCollection(a GLMPresentationB...etc...
+		aContext: 	a GLMTransmissionContext(nil)
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		name: 	#selection
+		presentation: 	a GLMRoassal2Presentation(id=710672384 title=Examples pane=a GLMP...etc...
+
+
+[ 
+self transmissionStrategy transmitIn: aContext.
+self destination receive: self in: aContext ] in GLMTransmission>>transmitIn:
+	Receiver: GLMTransmission (origins=an OrderedCollection(a GLMPresentationBoundPort 757858304 (name=#...etc...
+	Arguments and temporary variables: 
+		aContext: 	a GLMTransmissionContext(nil)
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		context: 	nil
+		destination: 	a GLMPresentationBoundPort 794558464 (name=#selection value=a RTVi...etc...
+		browser: 	nil
+		origins: 	an OrderedCollection(a GLMOriginPortReference 793247744 (a GLMPresenta...etc...
+		transmissionStrategy: 	a GLMNoStrategy
+		transformation: 	[ :example | example result ]
+		condition: 	true
+
+
+GLMPane>>notingPresentationChangeDo:
+	Receiver: a GLMPane(478937088 2)
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+self transmissionStrategy transmitIn: aContext.
+self destination rec...etc...
+		oldPresentations: 	an OrderedCollection(a GLMDynamicPresentation(id=350224384 ti...etc...
+		oldMatchingPresentations: 	an OrderedCollection(a GLMDynamicPresentation(id=3502...etc...
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		browser: 	a GLMPager(id=108003328 title=Roassal examples browser pane=a GLMPane(...etc...
+		name: 	'2'
+		presentations: 	a GLMCompositePresentation(id=217841664 title=a RTRoassalExample...etc...
+		ports: 	an OrderedCollection(Port (pane='2' name=#activePresentation value=nil) ...etc...
+		lastActivePresentation: 	nil
+		allowedToNotePresentationsChanged: 	false
+		cachedMatchingPresentations: 	an OrderedCollection(a GLMDynamicPresentation(id=3...etc...
+
+
+GLMPresentationBoundPort(GLMBoundPort)>>notingPresentationChangeDo:
+	Receiver: a GLMPresentationBoundPort 794558464 (name=#selection value=a RTView)
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+self transmissionStrategy transmitIn: aContext.
+self destination rec...etc...
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		name: 	#selection
+		presentation: 	a GLMRoassal2Presentation(id=710672384 title=Examples pane=a GLMP...etc...
+
+
+GLMTransmission>>transmitIn:
+	Receiver: GLMTransmission (origins=an OrderedCollection(a GLMPresentationBoundPort 757858304 (name=#...etc...
+	Arguments and temporary variables: 
+		aContext: 	a GLMTransmissionContext(nil)
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		context: 	nil
+		destination: 	a GLMPresentationBoundPort 794558464 (name=#selection value=a RTVi...etc...
+		browser: 	nil
+		origins: 	an OrderedCollection(a GLMOriginPortReference 793247744 (a GLMPresenta...etc...
+		transmissionStrategy: 	a GLMNoStrategy
+		transformation: 	[ :example | example result ]
+		condition: 	true
+
+
+GLMTransmission>>transmit
+	Receiver: GLMTransmission (origins=an OrderedCollection(a GLMPresentationBoundPort 757858304 (name=#...etc...
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		context: 	nil
+		destination: 	a GLMPresentationBoundPort 794558464 (name=#selection value=a RTVi...etc...
+		browser: 	nil
+		origins: 	an OrderedCollection(a GLMOriginPortReference 793247744 (a GLMPresenta...etc...
+		transmissionStrategy: 	a GLMNoStrategy
+		transformation: 	[ :example | example result ]
+		condition: 	true
+
+
+ByteSymbol(Symbol)>>value:
+	Receiver: #transmit
+	Arguments and temporary variables: 
+		anObject: 	GLMTransmission (origins=an OrderedCollection(a GLMPresentationBoundP...etc...
+	Receiver's instance variables: 
+#transmit
+
+IdentitySet(Set)>>do:
+	Receiver: an IdentitySet(GLMTransmission (origins=an OrderedCollection(a GLMPresentationBoundPort 75...etc...
+	Arguments and temporary variables: 
+		aBlock: 	#transmit
+		index: 	1
+		each: 	GLMTransmission (origins=an OrderedCollection(a GLMPresentationBoundPort ...etc...
+	Receiver's instance variables: 
+		tally: 	1
+		array: 	an Array(GLMTransmission (origins=an OrderedCollection(a GLMPresentation...etc...
+
+
+GLMRoassal2Presentation(GLMPresentation)>>selection:
+	Receiver: a GLMRoassal2Presentation(id=710672384 title=Examples pane=a GLMPane(478937088 2))
+	Arguments and temporary variables: 
+		anObject: 	a RTExampleSelection
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(478937088 2)
+		title: 	'Examples'
+		titleIcon: 	nil
+		transformation: 	nil
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMGeneri...etc...
+		condition: 	[ self gtExamples notEmpty ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	true
+		parentPrototype: 	nil
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	GLMCompositePresentation>>roassal2
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		painting: 	nil
+		paintingBlock: 	[ :view | 
+view @ RTDraggableView.
+self gtOpenOn: view ]
+		view: 	a RTView
+		shouldPopulateSelection: 	true
+		newViewBlock: 	[ RTView new ]
+
+
+[ :event | self selection: each model ] in [ :each | each when: TRMouseLeftClick do: [ :event | self selection: each model ] ] in GLMRoassal2Presentation>>renderOn:
+	Receiver: a GLMRoassal2Presentation(id=710672384 title=Examples pane=a GLMPane(478937088 2))
+	Arguments and temporary variables: 
+		aView: 	a RTView
+		each: 	a RTElement
+		event: 	a TRMouseLeftClick
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(478937088 2)
+		title: 	'Examples'
+		titleIcon: 	nil
+		transformation: 	nil
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMGeneri...etc...
+		condition: 	[ self gtExamples notEmpty ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	true
+		parentPrototype: 	nil
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	GLMCompositePresentation>>roassal2
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		painting: 	nil
+		paintingBlock: 	[ :view | 
+view @ RTDraggableView.
+self gtOpenOn: view ]
+		view: 	a RTView
+		shouldPopulateSelection: 	true
+		newViewBlock: 	[ RTView new ]
+
+
+BlockClosure>>cull:
+	Receiver: [ :event | self selection: each model ]
+	Arguments and temporary variables: 
+		anArg: 	a TRMouseLeftClick
+	Receiver's instance variables: 
+		outerContext: 	[ :each | each when: TRMouseLeftClick do: [ :event | self selecti...etc...
+		startpc: 	107
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :event | self selection: each model ]
+	Arguments and temporary variables: 
+		firstArg: 	a TRMouseLeftClick
+		secondArg: 	an Announcer
+	Receiver's instance variables: 
+		outerContext: 	[ :each | each when: TRMouseLeftClick do: [ :event | self selecti...etc...
+		startpc: 	107
+		numArgs: 	1
+
+
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		anAnnouncement: 	a TRMouseLeftClick
+	Receiver's instance variables: 
+		announcer: 	an Announcer
+		announcementClass: 	TRMouseLeftClick
+		subscriber: 	a GLMRoassal2Presentation(id=710672384 title=Examples pane=a GLMPan...etc...
+		action: 	[ :event | self selection: each model ]
+
+
+BlockClosure>>on:do:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	[ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx...etc...
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+[ Processor terminateActive ] in [ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx := thisContext.
+thisCtx := onDoCtx home.	"find the context on stack for which this method's is sender"
+[ onDoCtx sender == thisCtx ]
+	whileFalse: [ 
+		onDoCtx := onDoCtx sender.
+		onDoCtx
+			ifNil: [ 
+				"Can't find our home context. seems like we're already forked
+				and handling another exception in new thread. In this case, just pass it through handler."
+				^ handlerAction cull: ex ] ].
+bottom := [ Processor terminateActive ] asContext.
+onDoCtx privSender: bottom.
+handler := [ handlerAction cull: ex ] asContext.
+handler privSender: thisContext sender.
+(Process forContext: handler priority: Processor activePriority) resume.	"cut the stack of current process"
+thisContext privSender: thisCtx.
+nil ] in BlockClosure>>on:fork:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	nil
+		ex: 	UnhandledError
+		copy: 	nil
+		onDoCtx: 	nil
+		process: 	nil
+		handler: 	nil
+		bottom: 	nil
+		thisCtx: 	nil
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+
+--- The full stack ---
+TRConstraint class(Object)>>doesNotUnderstand: #stick:onTheBottomLeftOf:
+RTLabelled>>initializeElement:
+RTElement(RTAnnounceableObject)>>addInteraction:
+RTElement(RTAnnounceableObject)>>@
+[ :e | e @ interaction ] in RTGroup>>@
+RTGroup(OrderedCollection)>>do:
+RTGroup>>@
+RTRoassalExample>>exampleArc
+RTExampleSelection(GTExample)>>result
+[ :example | example result ] in RTRoassalExample(RTAbstractExample)>>gtInspectorPreviewIn:
+BlockClosure>>glamourValueWithArgs:
+BlockClosure(Object)>>glamourValue:
+GLMTransmission>>value
+GLMPanePort>>receive:in:
+GLMPresentationBoundPort>>receive:in:
+[ 
+self transmissionStrategy transmitIn: aContext.
+self destination receive: self in: aContext ] in GLMTransmission>>transmitIn:
+GLMPane>>notingPresentationChangeDo:
+GLMPresentationBoundPort(GLMBoundPort)>>notingPresentationChangeDo:
+GLMTransmission>>transmitIn:
+GLMTransmission>>transmit
+ByteSymbol(Symbol)>>value:
+IdentitySet(Set)>>do:
+GLMRoassal2Presentation(GLMPresentation)>>selection:
+[ :event | self selection: each model ] in [ :each | each when: TRMouseLeftClick do: [ :event | self selection: each model ] ] in GLMRoassal2Presentation>>renderOn:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+[ Processor terminateActive ] in [ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx := thisContext.
+thisCtx := onDoCtx home.	"find the context on stack for which this method's is sender"
+[ onDoCtx sender == thisCtx ]
+	whileFalse: [ 
+		onDoCtx := onDoCtx sender.
+		onDoCtx
+			ifNil: [ 
+				"Can't find our home context. seems like we're already forked
+				and handling another exception in new thread. In this case, just pass it through handler."
+				^ handlerAction cull: ex ] ].
+bottom := [ Processor terminateActive ] asContext.
+onDoCtx privSender: bottom.
+handler := [ handlerAction cull: ex ] asContext.
+handler privSender: thisContext sender.
+(Process forContext: handler priority: Processor activePriority) resume.	"cut the stack of current process"
+thisContext privSender: thisCtx.
+nil ] in BlockClosure>>on:fork:
+-------------------------------------------------------------------------------
+
