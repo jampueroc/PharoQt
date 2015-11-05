@@ -1,1 +1,1 @@
-b := RTNameCloud newaddString: 'open| v shape |v := RTView new.shape := RTLabel new height: [ :assoc | assoc value ]; text: #key.v addAll: (shape elementsOn: table associations).RTFlowLayout on: v elements.v open'.b
+values := #(35 26 5 18 17 60 36 13 16 28 29 3 8 0 3 2 14 12 13 17 1 9 3 3 4 1 1 12 1 1 61).v := RTView new.n := RTMultiLinearColorForIdentity new objects: values.shape := RTBox new color: n; size: #yourself.es := shape elementsOn: values.v addAll: es.RTHorizontalLineLayout new alignBottom; gapSize: 0; on: es.v

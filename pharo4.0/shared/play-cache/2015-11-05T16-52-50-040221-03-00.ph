@@ -1,0 +1,1 @@
+nodeA := Node new.nodeB := Node new.nodeA name: 'A'.nodeA name.nodeB name: 'B'.nodeArray := OrderedCollection new.nodeA publ: (nodeB name).nodeArray add: nodeA.nodeArray add: nodeB.nodeArray.
