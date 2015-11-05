@@ -1,0 +1,1 @@
+LOGame new openInWorld .

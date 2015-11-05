@@ -1,0 +1,1 @@
+nodes:= Dictionary new.nodes at: 'France' put: (Array with: Color blue with: Color white with: Color red).nodes at: 'Belgium' put: (Array with: Color black with: Color yellow with: Color red).RQTMainWindow new; graphExample: nodes.

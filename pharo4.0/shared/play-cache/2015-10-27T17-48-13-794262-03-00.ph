@@ -1,0 +1,1 @@
+PharoTutorial selector.Transcript show: 'Hello World asd';cr. Transcript show: 'Hello World holi';cr. 
