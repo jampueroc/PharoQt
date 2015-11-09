@@ -1,1 +1,1 @@
-PharoTutorial go.
+LOGame new openInWorld
