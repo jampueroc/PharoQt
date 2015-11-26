@@ -1,0 +1,1 @@
+a:=#(#('D' 'true') #('B' 'true') #('C' 'true')).b:=OrderedCollection new .a  do:[:asd | b add:asd first].b.
