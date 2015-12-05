@@ -1,0 +1,1 @@
+TextModel new text:'asdfasdfa'; enable:false

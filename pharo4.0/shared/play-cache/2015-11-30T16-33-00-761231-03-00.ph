@@ -1,0 +1,1 @@
+| proxy systemState |proxy := XMLRPCProxy withUrl:'http://localhost:11311'.systemState := (proxy invokeMethod:'getSystemState' withArgs:{'/script'})systemState inspect

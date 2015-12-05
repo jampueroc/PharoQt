@@ -1,0 +1,1 @@
+TextModel new enabled: false; text: 'asdf'; openWithSpec .
