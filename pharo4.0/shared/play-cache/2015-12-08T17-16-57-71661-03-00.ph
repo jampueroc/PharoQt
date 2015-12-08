@@ -1,0 +1,1 @@
+(ROSAPI new echoTopic: '/turtle1/cmd_vel') inspect.V

@@ -1,0 +1,1 @@
+Gofer it        url: 'http://smalltalkhub.com/mc/CAR/PhaROS/main' username: ''  password: '';         package: 'ConfigurationOfPhaROS';        load.(Smalltalk at: #ConfigurationOfPhaROS) loadBleedingEdge.

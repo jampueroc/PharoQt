@@ -1,1 +1,1 @@
-"ToDo: Update del graph. Name."TestingGraph new testMainWindow2.
+"ToDo: Update del graph. Name."

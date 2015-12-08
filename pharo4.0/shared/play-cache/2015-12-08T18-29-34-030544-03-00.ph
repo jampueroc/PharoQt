@@ -1,0 +1,1 @@
+v := RTView new.n := RTMultiLinearColor newcolors: (ColorPalette sequential colors: 8 scheme:'GnBu').shape := RTBox new size: 30; color: (Color r:0.4 g:0.5 b:0.5 alpha:0.4).elements := shape elementsOn: (0.0 to: 1.0 by: 0.05).v addAll: elements.RTGridLayout on: elements.v
