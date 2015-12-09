@@ -1,0 +1,1 @@
+e := RTEdge new.e attributeAt: #one put: 1.e attributeAt: #one
