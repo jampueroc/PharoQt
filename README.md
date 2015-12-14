@@ -62,7 +62,7 @@ Ademas se debe agregar el siguiente repositorio e instalar los paquetes del clie
 MCHttpRepository
     location: 'http://ss3.gemstone.com/ss/XMLRPC'
     user: ''
-    password: ‘'
+    password: ''
    
 ```
 
