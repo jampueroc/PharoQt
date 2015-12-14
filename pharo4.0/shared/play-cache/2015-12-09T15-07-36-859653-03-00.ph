@@ -1,0 +1,1 @@
+(DataTopicWindow new nameTopic:'/test') openWithSpec .

@@ -1,1 +1,1 @@
-PipeableOSProcess command: ('source /opt/ros/indigo/bin/rostopic;rostopic echo --help').
+ROSAPI new echoTopic: '/test'
