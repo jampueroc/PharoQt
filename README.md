@@ -49,3 +49,49 @@ Las funcionalidades pensadas para la interfaz son las siguientes:
 
 * Poder enviar mensajes desde la interfaz.
 
+## Instalación
+
+Se provee el archivo imagen executable de pharo en el repositorio github para llegar y utilizar en linux.
+Esta imagen viene con las dependencias ya instaladas.
+
+En caso de ejecutar en otro sistema operativo exportar el .st con la clase  RQT-Pharo, para instalar se requiere instalar las dependecias de Roassal2 (versión estable), OSProcess (versión estable).
+
+Ademas se debe agregar el siguiente repositorio e instalar los paquetes del cliente y executar la configuración para instalar sus dependencias.
+
+```
+MCHttpRepository
+    location: 'http://ss3.gemstone.com/ss/XMLRPC'
+    user: ''
+    password: ‘'
+   
+```
+
+Esto fue probado en ubuntu 14.04 de 64bits y windows 10 .
+
+
+##Ejecución
+
+Para ejecutarlo sólo debe estar corriendo ros y luego ejecutar en un playground lo  siguiente:
+```
+PhaRos new.
+```
+
+Al hacerlo se abrirá una ventana con la aplicación que graficará automáticamente las conexiones entre nodos y tópicos por lo que el usuario puede ocuparlo sin tener que ejecutar ningún otro comando.
+
+
+##Extensiones.
+
+Si se desea implementar alguna funcionalidad extra, se puede hacer de manera bastante sencilla, para esto basta entender los distintos objetos existentes:
+
+* Adapter : Se encarga de la extracción de datos desde ros a objetos en Pharo.
+* DataWindow: Es la ventana que se crea cuando se hace click en un nodo/tópico
+* Graph : Es el objeto Roassal que genera el grafo.
+* HideWindow: Es la ventana que se crea cuando se hace click en nodes/topics para esconder/ver nodos/tópicos.
+* Node: Objeto Nodo.
+* Pharos: aplicación principal que se encarga de crear los objetos para la visualización de la aplicación.
+* ROSAPI: api para conectar Pharo con ros.
+* RQTGMainWindow: ventana principal de la aplicación.
+* TestingGraph: test del grafo.
+* Topic: Objeto Nodo.
+
+
